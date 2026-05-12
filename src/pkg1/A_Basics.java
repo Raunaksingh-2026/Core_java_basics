@@ -7,7 +7,15 @@ import java.util.Scanner;
 public class A_Basics { // CLASS_NAME is "Main" and FILE_NAME is "Main.java" must be same and here 'public' is ACESS_MODIFIER
     static void main(String[] args) { // here 'void' is RETURN_TYPE of FUNCTION, 'main' is FUNCTION_NAME
 
+        /************************** Variables ****************************/
+        int age = 20;
+        double salary = 50000.50;
+        char grade = 'A';
+        boolean isJavaFun = true;
+        String name = "Raunak";
+
         System.out.println("Got it"); // here DOT( . ) operator is used for accessing the MEMBERS of CLASS named as "System" and "println" is FUNCTION
+
         /************************** DATA TYPE ***************************/
         int number1 = 0b101;// here we use binary format to initialize literals or value of variable
         int number2 = 0x101;// here we use hexadecimal formate initialize literals or value of variable
