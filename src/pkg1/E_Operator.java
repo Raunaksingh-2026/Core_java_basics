@@ -43,5 +43,48 @@ public class E_Operator {
 
         /************* ASSIGNMENT OPERATOR *****************/
         System.out.println("***** Assignment Operator *****");
+
+        int g = 10;
+        System.out.println(g); // 10
+
+        g += 5;// g = g + 5
+        System.out.println(g); // 15
+
+        g -= 5;// g = g - 5
+        System.out.println(g); // 10
+
+        g *= 5;
+        System.out.println(g); // 50
+
+        g /= 5;
+        System.out.println(g); // 10
+
+        /************* INCREMENT & DECREMENT OPERATOR *****************/
+        System.out.println("***** Increment & Decrement Operator *****");
+
+        int h = 10;
+
+//        PRE INCREMENT -> Use first, then increment
+        System.out.println("Before Pre Increment : " + h); // 10
+        h++;// h = h + 1
+        System.out.println("After Pre Increment : " + h); // 10
+
+        System.out.println("Before Pre decrement : " + h); // 10
+        h--;// h = h + 1
+        System.out.println("After Pre Decrement : " + h); // 10
+/*
+//        POST INCREMENT -> Increment first, then use
+//        ++h;// h = h + 1
+        System.out.println("After Post Increment : " + h); // 10
+        System.out.println("Before Post Increment : " + (--h)); // 10
+        System.out.println("After Post Increment : " + h); // 10
+
+        --h;// h = h + 1
+        System.out.println("Before Post Decrement : " + h); // 10
+        System.out.println("After Post Decrement : " + h); // 10
+*/
+        /************* BITWISE OPERATOR *****************/
+//        Later
+
     }
 }
