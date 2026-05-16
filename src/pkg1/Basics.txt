@@ -1,0 +1,275 @@
+++++++++++++++++++++++++++++++++++ SETUP ++++++++++++++++++++++++++++++++++
+C:\Users\Raonak>java --version
+
+java 25.0.2 2026-01-20 LTS
+Java(TM) SE Runtime Environment (build 25.0.2+10-LTS-69)
+Java HotSpot(TM) 64-Bit Server VM (build 25.0.2+10-LTS-69, mixed mode, sharing)
+
+this PC > windows(C:) > Program files > Java > jdk-25.0.2 > bin > then copy the address
+Start menu > Search environment variable and open environment variable > then add this to new user variable > then ok
+
+
++++++++++++++++++++++++++ EXECUTING FIRST PROGRAM ++++++++++++++++++++++++++++
+COMPILING THE PROGRAM --->
+// For compile the JAVA program and COMPILED CLASS FILE will create in same file as where the source file is present
+        -> [ javac CLASS_NAME.java ]
+
+// For compile the JAVA program and COMPILED CLASS FILE will create in another file as where the PACKAGE of source file wants
+        -> [ javac -d . CLASS_NAME.java ]
+
+
++++++++++++++++++++++++++ INTRODUCTION TO JAVA ++++++++++++++++++++++++++++
+JAVA is developed by JAMES GOSLING in 1995
+
+ROBUST -> strong + reliable + error handling capability
+    -> Java is considered robust because of:
+        ✔ Exception Handling
+        ✔ Strong Memory Management
+        ✔ Garbage Collection
+        ✔ Type Checking
+        ✔ No Pointer Arithmetic
+
+
++++++++++++++++++++++++++ Function in JAVA ++++++++++++++++++++++++++++
+FUNCTION :- basic building block that perform task
+    SYNTAX OF FUNCTION ->
+        RETURN_TYPE FUNCTION_NAME(FUNCTION_PARAMETER) {
+        ....
+        }
+
+
++++++++++++++++++++++++++ CLASS in JAVA ++++++++++++++++++++++++++++
+CLASS :- it is container for related FUNCTION
+    SYNTAX OF CLASS ->
+        [ACCES_MODIFIER] CLASS_KEYWORD CLASS_NAME {
+           void main() {
+           ....
+           }
+        }
+      OR
+        CLASS_KEYWORD CLASS_NAME {
+           void main() {
+           ....
+          }
+        }
+
+
++++++++++++++++++++++++++ ACCESS MODIFIER in JAVA ++++++++++++++++++++++++++++
+ACCESS MODIFIER :-
+
+
++++++++++++++++++++++++++ Naming Convention ++++++++++++++++++++++++++++
+1. PascalNamingConvention is used only for CLASSES
+2. camelNamingConvention is used for METHOD or FUNCTION or for IDENTIFIER
+
+
+++++++++++++++++++++++++++++++++ PACKAGE ++++++++++++++++++++++++++++++++++
+PACKAGE :- use to organize the CLASSES of java
+    +----------------------------------------------------+
+    |    package mypackage;
+    |
+    |    public class Test {
+    |        public static void main(String[] args) {
+    |            System.out.println("Hello Package");
+    |        }
+    |    }
+    +----------------------------------------------------+
+                                |
+                                v
+    compile the class by using Terminal type this -> [ javac -d . nameOfFile.java ] -> create folder automatically
+                                |
+                                V
+    to Run the code in Terminal type this -> [ java mypackage.Test ]
+
+TYPES OF PACKAGE in java
+    1. Build-in-package
+        i. java.util
+       ii. java.io
+      iii. java.lang
+    2. Used-defined-package
+        i. package mypackage;
+
+
++++++++++++++++++++++++++ Execution process of Java program ++++++++++++++++++++++++++++
+HOW JAVA CODE IS EXECUTED :-
+
+
+++++++++++++++++++++++++++++++++++ Input and Output in java ++++++++++++++++++++++++++++++++++
+INPUT -
+SCANNER is object that allow to take INPUT by user in java this CLASS is predefined in PACKAGE named as "UTIL"
+importing SCANNER class by using "import java.utiil.scanner"
+
+OUTPUT - System.out.print("Message to be print") next output will print in same line
+OUTPUT - System.out.println("Message to be print") next statement will print in next line " 'sout' + TAB is shortcut key "
+OUTPUT - System.out.print("Message to be print\n") next statement will print in next line
+
+
+++++++++++++++++++++++++++++++++++ VARIABLE & DATATYPE ++++++++++++++++++++++++++++++++++
+JAVA is "TYPED" language that's why we have to define the DATATYPE of variable
+whereas
+JAVASCRIPT is " WEAKLY TYPED " language that why there is no need of DATATYPE instead we use "LET" or "VAR"
+
+VARIABLE - Variables store data.
+    syntax of VARIABLE -> [ DATATYPE VARIABLE_NAME = VALUE; ]
+
+CONSTANT -
+    syntax of CONSTANT -
+
+DATATYPE -
+there are two types of DATATYPE - 1. PRIMITIVE | 2. NON-PRIMITIVE
+
+1. PRIMITIVE ->
+    A. PRIMITIVE TYPED :- there is NO need to ALLOCATE memory
+        | Type    | Size    | Example             |
+        | ------- | ------- | ------------------- |
+        | byte    | 1 byte  | `byte a = 10;`      |
+        | short   | 2 bytes | `short b = 200;`    |
+        | int     | 4 bytes | `int c = 1000;`     |
+        | long    | 8 bytes | `long d = 10000L;`  |
+        | float   | 4 bytes | `float e = 10.5f;`  |
+        | double  | 8 bytes | `double f = 20.55;` |
+        | char    | 2 bytes | `char g = 'A';`     |
+        | boolean | 1 bit   | `boolean h = true;` |
+
+    B. REFERENCE TYPED :- to store COMPLEX OBJECT, needs to ALLOCATE memory by using "new" keyword and NO need to DEALLOCATE the memory address stored in STACK that point to HEAP where value can be stored
+        a. date
+        b. mail messages
+        c. etc
+
+2. NON-PRIMITIVE -
+    a. string -> It is Immutable in which we can't change the actual string
+    b. array ->
+    c. class ->
+    d. object ->
+    e. interface ->
+
+
+++++++++++++++++++++++++++++++++++ Type Casting in java ++++++++++++++++++++++++++++++++++
+TYPE CONVERSION or CASTING :- converting one DATA_TYPE to another
+there are two types of CASTING
+    1. WIDENING TYPE_CASTING also called IMPLICIT TYPE_CASTING
+    2. NARROWING TYPE_CASTING also called EXPLICIT TYPE_CASTING
+
+WIDENING or IMPLICIT TYPE_CONVERSION - smaller DATA_TYPE is converted into a larger DATA_TYPE by COMPILER "automatically"
+              byte > short > char > int > long > float > double
+
+"TYPE CONVERSION ERROR occurs when you try to assign a value of a larger data type to a variable of a smaller data type without explicitly converting it."
+
+
+NARROWING or EXPLICIT TYPE_CONVERSION - larger DATA_TYPE is converted into a smaller DATA_TYPE by PROGRAMMER "manually"
+
+
+MATHS CLASS :- defined in "java.lang"
+
+
+FORMATTING NUMBERS :-
+
+
+
+OPERATOR -> Specific symbol used to perform operation on variables or values
+Types of OPERATOR ->
+1. Arithmetic Operators - used in Mathematical operation
+2. Relational Operators - used to compare values
+3. Logical Operators - used with boolean values
+4. Assignment Operators - used to assign values
+5. Unary Operators -
+6. Increment/Decrement Operators -
+7. Bitwise Operators - Work on bits
+8. Ternary Operator -
+9. Shift Operators -
+
+1. ARITHMETIC :-  [ + ]Addition - Adds together two values	[x + y]
+                  [ - ]Subtraction - Subtracts one value from another	[x - y]
+                  [ * ]Multiplication - Multiplies two values	[x * y]
+                  [ / ]Division - Divides one value by another	[x / y]
+                  [ % ]Modulus - Returns the division remainder	[x % y]
+                  [ ++ ]Increment - Increases the value of a variable by 1	[++x]
+                  [ -- ]Decrement - Decreases the value of a variable by 1	[--x]
+
+4. ASSIGNMENT :- [ = ]    [ x = 5 ]    [ x = 5 ]
+                 [ += ]   [ x += 3 ]   [ x = x + 3 ]
+                 [ -= ]   [ x -= 3 ]   [ x = x - 3 ]
+                 [ *= ]   [ x *= 3 ]   [ x = x * 3 ]
+                 [ /= ]   [ x /= 3 ]   [ x = x / 3 ]
+                 [ %= ]   [ x %= 3 ]   [ x = x % 3 ]
+                 [ &= ]   [ x &= 3 ]   [ x = x & 3 ]
+                 [ |= ]   [ x |= 3 ]   [ x = x | 3 ]
+                 [ ^= ]   [ x ^= 3 ]   [ x = x ^ 3 ]
+                 [ >>= ]  [ x >>= 3 ]  [ x = x >> 3 ]
+                 [ <<= ]  [ x <<= 3 ]  [ x = x << 3 ]
+
+
+CONTROL FLOW STATEMENT :- Determine the order in which statements are executed, allowing for branching or looping based on conditions
+TYPES of CONTROL FLOW STATEMENT -
+1. DECISION - MAKING STATEMENT
+2. LOOP STATEMENT
+3. JUMP STATEMENTS
+
+1. DECISION - MAKING STATEMENT :-
+A. IF STATEMENT: Executes a block of code if a condition is true.
+   if(CONDITION){
+      STATEMENT IF TRUE ;
+   }
+
+B. IF - ELSE STATEMENT: Executes one block if a condition is true and another if it's false.
+   if(CONDITION){
+       STATEMENT IF TRUE ;
+   }
+   else {
+      ELSE_STATEMENT;
+   }
+
+C. IF-ELSE-IF LADDER STATEMENT: Tests multiple conditions sequentially.
+   if(CONDITION){
+      STATEMENT IF TRUE ;
+   }
+   else if {
+      ELSE_IF_STATEMENT;
+   }
+   else{
+      ELSE_STATEMENT
+   }
+
+D. TERNARY STATEMENT :
+   DATA_TYPE VARIABLE_NAME = CONDITIONAL_EXPRESSION ? TRUE_STATEMENT : FALSE OR ELSE_STATEMENT
+
+E. SWITCH STATEMENT: Allows a variable to be tested for equality against a list of values for multi-way branching.
+   switch(EXPRESSION)
+      case VALUE_1:
+         code:
+         break:
+      case VALUE_2:
+         code:
+         break:
+      default :
+         default code:
+
+
+2. LOOP STATEMENT :-
+
+
+3. JUMP STATEMENT :-
+
+
+
+METHOD :- it is block of REUSABLE code that is executed when it is called | a method is a function that is stored as a property of an object.
+FUNCTION can be call "DIRECTLY" but METHOD is call by "OBJECT OF CLASS".
+
+SYNTAX of METHOD :- modifier returnType nameOfMethod (Parameter List) {
+                      // method body
+                      return returnValue;
+                   }
+
+| Parameter                     | Argument            |
+| ----------------------------- | ------------------- |
+| Variable in method definition | Actual value passed |
+| `String myName`               | `"Raunak"`          |
+
+
+RECURSIVE METHOD :- Method Calling Itself
+
+
+CHARACTER SPECIFIER
+
+
+Sorting -> Arranging data in order (ascending / descending)
