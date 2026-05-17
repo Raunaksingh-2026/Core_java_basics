@@ -30,14 +30,6 @@ ROBUST -> strong + reliable + error handling capability
         ✔ No Pointer Arithmetic
 
 
-+++++++++++++++++++++++++ Function in JAVA ++++++++++++++++++++++++++++
-FUNCTION :- basic building block that perform task
-    SYNTAX OF FUNCTION ->
-        RETURN_TYPE FUNCTION_NAME(FUNCTION_PARAMETER) {
-        ....
-        }
-
-
 +++++++++++++++++++++++++ CLASS in JAVA ++++++++++++++++++++++++++++
 CLASS :- it is container for related FUNCTION
     SYNTAX OF CLASS ->
@@ -159,116 +151,124 @@ WIDENING or IMPLICIT TYPE_CONVERSION - smaller DATA_TYPE is converted into a lar
 NARROWING or EXPLICIT TYPE_CONVERSION - larger DATA_TYPE is converted into a smaller DATA_TYPE by PROGRAMMER "manually"
 
 
+++++++++++++++++++++++++++++++++++ MATHS Class in java ++++++++++++++++++++++++++++++++++
 MATHS CLASS :- defined in "java.lang"
 
 
+++++++++++++++++++++++++++++++++++ NUMBERS Formating ++++++++++++++++++++++++++++++++++
 FORMATTING NUMBERS :-
 
 
-
+++++++++++++++++++++++++++++++++++ Operators ++++++++++++++++++++++++++++++++++
 OPERATOR -> Specific symbol used to perform operation on variables or values
-Types of OPERATOR ->
-1. Arithmetic Operators - used in Mathematical operation
-2. Relational Operators - used to compare values
-3. Logical Operators - used with boolean values
-4. Assignment Operators - used to assign values
-5. Unary Operators -
-6. Increment/Decrement Operators -
-7. Bitwise Operators - Work on bits
-8. Ternary Operator -
-9. Shift Operators -
+    Types of OPERATOR ->
+        1. Arithmetic Operators - used in Mathematical operation
+        2. Relational Operators - used to compare values
+        3. Logical Operators - used with boolean values
+        4. Assignment Operators - used to assign values
+        5. Unary Operators -
+        6. Increment/Decrement Operators -
+        7. Bitwise Operators - Work on bits
+        8. Ternary Operator -
+        9. Shift Operators -
 
-1. ARITHMETIC :-  [ + ]Addition - Adds together two values	[x + y]
-                  [ - ]Subtraction - Subtracts one value from another	[x - y]
-                  [ * ]Multiplication - Multiplies two values	[x * y]
-                  [ / ]Division - Divides one value by another	[x / y]
-                  [ % ]Modulus - Returns the division remainder	[x % y]
-                  [ ++ ]Increment - Increases the value of a variable by 1	[++x]
-                  [ -- ]Decrement - Decreases the value of a variable by 1	[--x]
+        1. ARITHMETIC :-  [ + ]Addition - Adds together two values	[x + y]
+                          [ - ]Subtraction - Subtracts one value from another	[x - y]
+                          [ * ]Multiplication - Multiplies two values	[x * y]
+                          [ / ]Division - Divides one value by another	[x / y]
+                          [ % ]Modulus - Returns the division remainder	[x % y]
+                          [ ++ ]Increment - Increases the value of a variable by 1	[++x]
+                          [ -- ]Decrement - Decreases the value of a variable by 1	[--x]
 
-4. ASSIGNMENT :- [ = ]    [ x = 5 ]    [ x = 5 ]
-                 [ += ]   [ x += 3 ]   [ x = x + 3 ]
-                 [ -= ]   [ x -= 3 ]   [ x = x - 3 ]
-                 [ *= ]   [ x *= 3 ]   [ x = x * 3 ]
-                 [ /= ]   [ x /= 3 ]   [ x = x / 3 ]
-                 [ %= ]   [ x %= 3 ]   [ x = x % 3 ]
-                 [ &= ]   [ x &= 3 ]   [ x = x & 3 ]
-                 [ |= ]   [ x |= 3 ]   [ x = x | 3 ]
-                 [ ^= ]   [ x ^= 3 ]   [ x = x ^ 3 ]
-                 [ >>= ]  [ x >>= 3 ]  [ x = x >> 3 ]
-                 [ <<= ]  [ x <<= 3 ]  [ x = x << 3 ]
+        4. ASSIGNMENT :- [ = ]    [ x = 5 ]    [ x = 5 ]
+                         [ += ]   [ x += 3 ]   [ x = x + 3 ]
+                         [ -= ]   [ x -= 3 ]   [ x = x - 3 ]
+                         [ *= ]   [ x *= 3 ]   [ x = x * 3 ]
+                         [ /= ]   [ x /= 3 ]   [ x = x / 3 ]
+                         [ %= ]   [ x %= 3 ]   [ x = x % 3 ]
+                         [ &= ]   [ x &= 3 ]   [ x = x & 3 ]
+                         [ |= ]   [ x |= 3 ]   [ x = x | 3 ]
+                         [ ^= ]   [ x ^= 3 ]   [ x = x ^ 3 ]
+                         [ >>= ]  [ x >>= 3 ]  [ x = x >> 3 ]
+                         [ <<= ]  [ x <<= 3 ]  [ x = x << 3 ]
 
 
 CONTROL FLOW STATEMENT :- Determine the order in which statements are executed, allowing for branching or looping based on conditions
-TYPES of CONTROL FLOW STATEMENT -
-1. DECISION - MAKING STATEMENT
-2. LOOP STATEMENT
-3. JUMP STATEMENTS
+    TYPES of CONTROL FLOW STATEMENT -
+    1. DECISION - MAKING STATEMENT
+    2. LOOP STATEMENT
+    3. JUMP STATEMENTS
 
-1. DECISION - MAKING STATEMENT :-
-A. IF STATEMENT: Executes a block of code if a condition is true.
-   if(CONDITION){
-      STATEMENT IF TRUE ;
-   }
+    1. DECISION - MAKING STATEMENT :-
+        A. IF STATEMENT: Executes a block of code if a condition is true.
+           if(CONDITION){
+              STATEMENT IF TRUE ;
+           }
 
-B. IF - ELSE STATEMENT: Executes one block if a condition is true and another if it's false.
-   if(CONDITION){
-       STATEMENT IF TRUE ;
-   }
-   else {
-      ELSE_STATEMENT;
-   }
+        B. IF - ELSE STATEMENT: Executes one block if a condition is true and another if it's false.
+           if(CONDITION){
+               STATEMENT IF TRUE ;
+           }
+           else {
+              ELSE_STATEMENT;
+           }
 
-C. IF-ELSE-IF LADDER STATEMENT: Tests multiple conditions sequentially.
-   if(CONDITION){
-      STATEMENT IF TRUE ;
-   }
-   else if {
-      ELSE_IF_STATEMENT;
-   }
-   else{
-      ELSE_STATEMENT
-   }
+        C. IF-ELSE-IF LADDER STATEMENT: Tests multiple conditions sequentially.
+           if(CONDITION){
+              STATEMENT IF TRUE ;
+           }
+           else if {
+              ELSE_IF_STATEMENT;
+           }
+           else{
+              ELSE_STATEMENT
+           }
 
-D. TERNARY STATEMENT :
-   DATA_TYPE VARIABLE_NAME = CONDITIONAL_EXPRESSION ? TRUE_STATEMENT : FALSE OR ELSE_STATEMENT
+        D. TERNARY STATEMENT :
+           DATA_TYPE VARIABLE_NAME = CONDITIONAL_EXPRESSION ? TRUE_STATEMENT : FALSE OR ELSE_STATEMENT
 
-E. SWITCH STATEMENT: Allows a variable to be tested for equality against a list of values for multi-way branching.
-   switch(EXPRESSION)
-      case VALUE_1:
-         code:
-         break:
-      case VALUE_2:
-         code:
-         break:
-      default :
-         default code:
+        E. SWITCH STATEMENT: Allows a variable to be tested for equality against a list of values for multi-way branching.
+           switch(EXPRESSION)
+              case VALUE_1:
+                 code:
+                 break:
+              case VALUE_2:
+                 code:
+                 break:
+              default :
+                 default code:
 
+    2. LOOP STATEMENT :-
 
-2. LOOP STATEMENT :-
-
-
-3. JUMP STATEMENT :-
+    3. JUMP STATEMENT :-
 
 
++++++++++++++++++++++++++ Function in JAVA ++++++++++++++++++++++++++++
+FUNCTION :- basic building block that perform task
+    SYNTAX OF FUNCTION ->
+        RETURN_TYPE FUNCTION_NAME(FUNCTION_PARAMETER) {
+        ....
+        }
 
+++++++++++++++++++++++++++++++++++ Methods in JAVA ++++++++++++++++++++++++++++++++++
 METHOD :- it is block of REUSABLE code that is executed when it is called | a method is a function that is stored as a property of an object.
 FUNCTION can be call "DIRECTLY" but METHOD is call by "OBJECT OF CLASS".
 
-SYNTAX of METHOD :- modifier returnType nameOfMethod (Parameter List) {
-                      // method body
-                      return returnValue;
-                   }
+    SYNTAX of METHOD ->
+        modifier returnType nameOfMethod (Parameter List) {
+              // method body
+              return returnValue;
+        }
 
-| Parameter                     | Argument            |
-| ----------------------------- | ------------------- |
-| Variable in method definition | Actual value passed |
-| `String myName`               | `"Raunak"`          |
+    |           Parameter           |      Argument       |
+    | ----------------------------- | ------------------- |
+    | Variable in method definition | Actual value passed |
+    | `String myName`               | `"Raunak"`          |
+
+RECURSIVE METHOD -> Method Calling Itself
 
 
-RECURSIVE METHOD :- Method Calling Itself
-
-
+++++++++++++++++++++++++++++++++++ CHARACTER SPECIFIER in java ++++++++++++++++++++++++++++++++++
 CHARACTER SPECIFIER
 
 
