@@ -8,6 +8,15 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.0.2+10-LTS-69, mixed mode, sharing)
 this PC > windows(C:) > Program files > Java > jdk-25.0.2 > bin > then copy the address
 Start menu > Search environment variable and open environment variable > then add this to new user variable > then ok
 
+++++++++++++++++++++++++++++++++++ Problem with IntelliJ IDEA ++++++++++++++++++++++++++++++++++
+Proble can occur when you use IntelliJ IDEA as code editor TRYTO DO THIS ->
+    Aapki CODE file different show ho rahi hai aur Run icon DISABLED hai because IntelliJ us file ko Java class / source file properly detect nahi kar raha.
+    Whenever Java file run na ho:
+        ✔ src marked as Sources Root -> Mark Directory as → Sources Root
+        ✔ File name = Class name
+        ✔ main() method present
+        ✔ Project SDK selected
+        ✔ Correct package
 
 +++++++++++++++++++++++++ EXECUTING FIRST PROGRAM ++++++++++++++++++++++++++++
 COMPILING THE PROGRAM --->
@@ -68,10 +77,12 @@ PACKAGE :- use to organize the CLASSES of java
     +----------------------------------------------------+
                                 |
                                 v
-    compile the class by using Terminal type this -> [ javac -d . nameOfFile.java ] -> create folder automatically
+    -> compile the class by using Terminal type this -> [ javac -d . nameOfFile.java ] -> create folder automatically
                                 |
                                 V
-    to Run the code in Terminal type this -> [ java mypackage.Test ]
+    -> to Run the code in Terminal type this -> [ java mypackage.Test ]
+
+    -> we can also use other CLASSES created by us by importing that CLASS
 
 TYPES OF PACKAGE in java
     1. Build-in-package
