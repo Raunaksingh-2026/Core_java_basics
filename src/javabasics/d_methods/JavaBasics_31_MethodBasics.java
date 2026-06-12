@@ -1,8 +1,8 @@
-package pkg1;
+package javabasics.d_methods;
 
 import java.util.Scanner;
 
-public class F_Method_0 {// defining CLASS FUNCTION named as "F_Method"
+public class JavaBasics_31_MethodBasics {// defining CLASS FUNCTION named as "F_Method"
 
 //     Method to print name
     public static void printMyName(String myName) {/// here "void" is RETURN_TYPE, "printMyName" is METHOD_NAME followed by PARENTHESIS which include PARAMETER "myName" of STRING DATA_TYPE

@@ -1,6 +1,6 @@
-package pkg1;
+package javabasics.b_operators;
 
-public class E_Operator {
+public class JavaBasics_11_Operator {
     static void main(String[] args) {
         /**************************** Operators *******************************/
 

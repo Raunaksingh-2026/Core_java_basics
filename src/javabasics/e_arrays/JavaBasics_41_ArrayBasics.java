@@ -1,9 +1,9 @@
-package pkg1;
+package javabasics.e_arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class B_Array {
+public class JavaBasics_41_ArrayBasics {
     static void main(String[] args) {
 
         /************* One Dimensional Array ***************/

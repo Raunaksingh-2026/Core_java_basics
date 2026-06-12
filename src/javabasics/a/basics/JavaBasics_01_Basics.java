@@ -1,10 +1,8 @@
-package pkg1;
+package javabasics.a.basics;
 
 import java.text.NumberFormat;
-import java.util.Date;
-import java.util.Scanner;
 
-public class A_Basics { // CLASS_NAME is "Main" and FILE_NAME is "Main.java" must be same and here 'public' is ACESS_MODIFIER
+public class JavaBasics_01_Basics { // CLASS_NAME is "Main" and FILE_NAME is "Main.java" must be same and here 'public' is ACESS_MODIFIER
     static void main(String[] args) { // here 'void' is RETURN_TYPE of FUNCTION, 'main' is FUNCTION_NAME
 
         /************************** Variables ****************************/

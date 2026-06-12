@@ -1,9 +1,8 @@
-package pkg1;
+package javabasics.f_maths;
 
-import java.text.NumberFormat;
 import java.util.Random;
 
-public class C_Maths {
+public class JavaBasics_51_MathBasics {
     static void main(String[] args) {
 
         int floatToInt = Math.round(32.98F); // here "round" is METHOD in MATH CLASS and this METHOD is OVERLOADED which means it can be implemented twice either it takes FLOAT DATA_TYPE os DOUBLE DATA_TYPE as ARGUMENT and return an INT value or LONG value

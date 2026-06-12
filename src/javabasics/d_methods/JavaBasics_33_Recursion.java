@@ -1,8 +1,8 @@
-package pkg1;
+package javabasics.d_methods;
 
 import java.util.Scanner;
 
-public class H_Recursion {
+public class JavaBasics_33_Recursion {
 
     /********************* FACTORIAL RECURSION FUNCTION ********************/
 //    Complexity is O(n)

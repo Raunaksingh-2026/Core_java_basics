@@ -1,7 +1,7 @@
-package pkg1;
+package javabasics.c_controlstatements;
 import java.util.Scanner;
 
-public class D_ControlFlowStatement1 {
+public class JavaBasics_21_ControlFlowStatement {
     static void main(String[] args) {
         Scanner userInput1 = new Scanner(System.in);
 
