@@ -46,16 +46,12 @@ public class JavaBasics_61_PatternBasics {
             Outer loop  -> Controls rows
             Inner loop  -> Controls columns
 */
-
         for (int i = 0; i < scanInput; i++) {
-
             for (int j = 0; j < scanInput; j++) {
                 System.out.print(" * ");
             }
-
             System.out.println();
         }
-
 /*
 =========================================================
                 2. INCREASING TRIANGLE PATTERN
@@ -72,11 +68,30 @@ public class JavaBasics_61_PatternBasics {
         Logic -> The number of stars increases with every row.
 */
         for (int i = 0; i < scanInput; i++) {
-
             for (int j = 0; j <= i; j++) {
                 System.out.print(" * ");
             }
+            System.out.println();
+        }
+/*
+==========================================================
+                3. DECREASING TRIANGLE PATTERN
+==========================================================
 
+        Output for scanInput = 5:
+
+        * * * * *
+        * * * *
+        * * *
+        * *
+        *
+
+        Logic -> The number of stars decreases with every row.
+*/
+        for (int i = scanInput; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
             System.out.println();
         }
     }
