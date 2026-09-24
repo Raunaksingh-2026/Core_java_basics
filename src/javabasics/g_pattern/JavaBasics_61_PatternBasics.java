@@ -94,5 +94,29 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
+/*
+==========================================================
+            4. DECREASING TRIANGLE - ALTERNATIVE APPROACH
+==========================================================
+
+        Same output:
+
+        * * * * *
+        * * * *
+        * * *
+        * *
+        *
+
+        Here -> i starts from 1 and goes up to scanInput.
+
+        Number of stars -> scanInput - i + 1
+*/
+        for (int i = 1; i <= scanInput; i++) {
+            for (int j = 1; j <= (scanInput - i + 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
     }
 }
