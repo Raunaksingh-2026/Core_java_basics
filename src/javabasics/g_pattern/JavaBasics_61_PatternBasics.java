@@ -118,5 +118,36 @@ public class JavaBasics_61_PatternBasics {
             System.out.println();
         }
 
+/*
+==========================================================
+                    5. PYRAMID PATTERN
+==========================================================
+
+              *
+             * *
+            * * *
+           * * * *
+          * * * * *
+
+        Logic ->
+            Outer loop
+                -> Controls rows.
+            First inner loop
+                -> Controls spaces.
+            Second inner loop
+                -> Controls stars.
+*/
+        for (int i = 0; i < scanInput; i++) {
+///            Print spaces
+            for (int j = scanInput; j >= i; j--) {
+                System.out.print("  ");
+            }
+///            Print stars
+            for (int k = 0; k <= i; k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        scanner.close();
     }
 }
