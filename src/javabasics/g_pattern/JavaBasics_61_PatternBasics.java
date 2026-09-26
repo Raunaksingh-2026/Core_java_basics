@@ -46,6 +46,7 @@ public class JavaBasics_61_PatternBasics {
             Outer loop  -> Controls rows
             Inner loop  -> Controls columns
 */
+        System.out.println("\n1. SQUARE PATTERN -->");
         for (int i = 0; i < scanInput; i++) {
             for (int j = 0; j < scanInput; j++) {
                 System.out.print(" * ");
@@ -67,6 +68,7 @@ public class JavaBasics_61_PatternBasics {
 
         Logic -> The number of stars increases with every row.
 */
+        System.out.println("\n2. INCREASING TRIANGLE PATTERN -->");
         for (int i = 0; i < scanInput; i++) {
             for (int j = 0; j <= i; j++) {
                 System.out.print(" * ");
@@ -88,9 +90,10 @@ public class JavaBasics_61_PatternBasics {
 
         Logic -> The number of stars decreases with every row.
 */
+        System.out.println("\n3. DECREASING TRIANGLE PATTERN -> METHOD-1 -->");
         for (int i = scanInput; i >= 1; i--) {
             for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+                System.out.print(" * ");
             }
             System.out.println();
         }
@@ -111,9 +114,10 @@ public class JavaBasics_61_PatternBasics {
 
         Number of stars -> scanInput - i + 1
 */
+        System.out.println("\n4. DECREASING TRIANGLE PATTERN -> METHOD-2 -->");
         for (int i = 1; i <= scanInput; i++) {
             for (int j = 1; j <= (scanInput - i + 1); j++) {
-                System.out.print("*");
+                System.out.print(" * ");
             }
             System.out.println();
         }
@@ -137,10 +141,11 @@ public class JavaBasics_61_PatternBasics {
             Second inner loop
                 -> Controls stars.
 */
+        System.out.println("\n5. PYRAMID PATTERN -->");
         for (int i = 0; i < scanInput; i++) {
 ///            Print spaces
             for (int j = scanInput; j >= i; j--) {
-                System.out.print("  ");
+                System.out.print(" ");
             }
 ///            Print stars
             for (int k = 0; k <= i; k++) {
