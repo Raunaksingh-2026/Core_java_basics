@@ -121,12 +121,12 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
-
 /*
 ==========================================================
                     5. PYRAMID PATTERN
 ==========================================================
 
+        Output for scanInput = 5:
               *
              * *
             * * *
@@ -150,6 +150,32 @@ public class JavaBasics_61_PatternBasics {
 ///            Print stars
             for (int k = 0; k <= i; k++) {
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+/*
+=============================================================
+                9. INVERTED PYRAMID
+=============================================================
+
+        Output for scanInput = 5:
+
+        *********
+         *******
+          *****
+           ***
+            *
+
+        Formula -> Number of stars = 2 * (scanInput - i) + 1
+*/
+        for (int i = 1; i <= scanInput; i++) {
+///             Print spaces
+            for (int j = 1; j < i; j++) {
+                System.out.print(" ");
+            }
+///             Print stars
+            for (int j = 1; j <= 2 * (scanInput - i) + 1; j++) {
+                System.out.print("*");
             }
             System.out.println();
         }
