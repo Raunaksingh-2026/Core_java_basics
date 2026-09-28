@@ -179,6 +179,49 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
+/*
+=============================================================
+                10. DIAMOND PATTERN
+=============================================================
+
+        Output for scanInput = 5:
+
+            *
+           ***
+          *****
+         *******
+        *********
+         *******
+          *****
+           ***
+            *
+
+        Diamond = Pyramid + Inverted Pyramid
+*/
+        for (int i = 1; i <= scanInput; i++) {
+///            Print spaces
+            for (int j = 1; j <= scanInput - i; j++) {
+                System.out.print(" ");
+            }
+///            Print stars
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+        for (int i = scanInput - 1; i >= 1; i--) {
+///            Print spaces
+            for (int j = 1; j <= scanInput - i; j++) {
+                System.out.print(" ");
+            }
+///            Print stars
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
         scanner.close();
     }
 }
