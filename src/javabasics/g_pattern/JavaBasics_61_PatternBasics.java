@@ -222,6 +222,38 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
+
+/*
+=============================================================
+                        11. HOLLOW SQUARE
+=============================================================
+
+        Output for scanInput = 5:
+
+        *****
+        *   *
+        *   *
+        *   *
+        *****
+
+        Logic -> Print * when:
+                    i == 1
+                    i == scanInput
+                    j == 1
+                    j == scanInput
+                 Otherwise print space.
+*/
+        for (int i = 1; i <= scanInput; i++) {
+            for (int j = 1; j <= scanInput; j++) {
+                if (i == 1 || i == scanInput ||
+                    j == 1 || j == scanInput) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
         scanner.close();
     }
 }
