@@ -222,7 +222,6 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
-
 /*
 =============================================================
                         11. HOLLOW SQUARE
@@ -252,6 +251,31 @@ public class JavaBasics_61_PatternBasics {
                     System.out.print(" ");
                 }
             }
+            System.out.println();
+        }
+
+/*
+=============================================================
+                        12. HOLLOW TRIANGLE
+=============================================================
+
+        Output:
+
+        *
+        **
+        * *
+        *  *
+        *****
+*/
+        for (int i = 1; i <= scanInput; i++) {
+            for (int j = 1; j <= i; j++) {
+                if (j == 1 || j == i || i == scanInput) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+
             System.out.println();
         }
         scanner.close();
