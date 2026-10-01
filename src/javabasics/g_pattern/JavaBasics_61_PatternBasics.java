@@ -253,7 +253,6 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
-
 /*
 =============================================================
                         12. HOLLOW TRIANGLE
@@ -275,7 +274,26 @@ public class JavaBasics_61_PatternBasics {
                     System.out.print(" ");
                 }
             }
+            System.out.println();
+        }
+/*
+=============================================================
+                        13. NUMBER TRIANGLE
+=============================================================
 
+        Output:
+
+        1
+        12
+        123
+        1234
+        12345
+
+*/
+        for (int i = 1; i <= scanInput; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
             System.out.println();
         }
         scanner.close();
