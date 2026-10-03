@@ -297,9 +297,9 @@ public class JavaBasics_61_PatternBasics {
             System.out.println();
         }
 /*
-        =========================================================
+=============================================================
                     14. SAME NUMBER TRIANGLE
-        =========================================================
+=============================================================
 
         Output:
 
@@ -316,6 +316,30 @@ public class JavaBasics_61_PatternBasics {
                 System.out.print(i);
             }
             System.out.println();
+        }
+        System.out.println();
+/*
+=============================================================
+                    16.
+=============================================================
+
+        Output for scanInput -> 5
+
+        aaaaa
+        BBBBB
+        ccccc
+        DDDDD
+        eeeee
+*/
+        int asciiOffset = 96;
+        for (int i = 1; i <= scanInput; i++) {
+            for (int j = 1; j <= scanInput; j++) {
+                System.out.print((char) (i + asciiOffset));
+            }
+            System.out.println();
+            if (asciiOffset == 96) {
+                asciiOffset = 64;
+            }else asciiOffset = 96;
         }
         scanner.close();
     }
