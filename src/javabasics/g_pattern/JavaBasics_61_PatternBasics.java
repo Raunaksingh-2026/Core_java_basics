@@ -320,7 +320,7 @@ public class JavaBasics_61_PatternBasics {
         System.out.println();
 /*
 =============================================================
-                    16.
+                    15.
 =============================================================
 
         Output for scanInput -> 5
@@ -340,6 +340,29 @@ public class JavaBasics_61_PatternBasics {
             if (asciiOffset == 96) {
                 asciiOffset = 64;
             }else asciiOffset = 96;
+        }
+/*
+=============================================================
+                        16. FLOYD'S TRIANGLE
+==============================================================
+
+        Output:
+
+        1
+        23
+        456
+        789
+        1011121314
+
+*/
+        int number = 1;
+
+        for (int i = 1; i <= scanInput; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(number + " ");
+                number++;
+            }
+            System.out.println();
         }
         scanner.close();
     }
