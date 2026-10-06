@@ -387,6 +387,25 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
+/*
+=============================================================
+                   18. CHARACTER TRIANGLE
+=============================================================
+
+        Output:
+
+        A
+        AB
+        ABC
+        ABCD
+        ABCDE
+*/
+        for (int i = 1; i <= scanInput; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print((char) ('A' + j - 1));
+            }
+            System.out.println();
+        }
         scanner.close();
     }
 }
