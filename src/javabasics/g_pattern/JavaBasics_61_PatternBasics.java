@@ -406,6 +406,26 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
+/*
+=============================================================
+                    19. SAME CHARACTER TRIANGLE
+=============================================================
+
+        Output:
+
+        A
+        BB
+        CCC
+        DDDD
+        EEEEE
+*/
+        for (int i = 1; i <= scanInput; i++) {
+            char character = (char) ('A' + i - 1);
+            for (int j = 1; j <= i; j++) {
+                System.out.print(character);
+            }
+            System.out.println();
+        }
         scanner.close();
     }
 }
