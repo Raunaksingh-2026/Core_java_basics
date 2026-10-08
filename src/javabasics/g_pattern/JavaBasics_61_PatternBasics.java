@@ -426,6 +426,53 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
+/*
+=============================================================
+                        20. BUTTERFLY PATTERN
+=============================================================
+
+        Output:
+
+        *        *
+        **      **
+        ***    ***
+        ****  ****
+        **********
+        ****  ****
+        ***    ***
+        **      **
+        *        *
+*/
+        for (int i = 1; i <= scanInput; i++) {
+//            Left stars
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+//            Middle spaces
+            for (int j = 1; j <= 2 * (scanInput - i); j++) {
+                System.out.print(" ");
+            }
+//            Right stars
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = scanInput - 1; i >= 1; i--) {
+//            Left stars
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+//            Middle spaces
+            for (int j = 1; j <= 2 * (scanInput - i); j++) {
+                System.out.print(" ");
+            }
+//            Right stars
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
         scanner.close();
     }
 }
