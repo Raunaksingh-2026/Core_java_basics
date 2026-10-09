@@ -473,6 +473,29 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
+/*
+=============================================================
+                        21. X PATTERN
+=============================================================
+
+        Output:
+
+        *   *
+         * *
+          *
+         * *
+        *   *
+*/
+        for (int i = 1; i <= scanInput; i++) {
+            for (int j = 1; j <= scanInput; j++) {
+                if (j == i || j == scanInput - i + 1) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
         scanner.close();
     }
 }
