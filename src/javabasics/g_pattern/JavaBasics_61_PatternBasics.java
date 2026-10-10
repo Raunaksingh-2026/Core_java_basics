@@ -496,6 +496,26 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
+        /*
+=============================================================
+                    22. CONTINUOUS ALPHABET PATTERN
+=============================================================
+
+        Output:
+
+        A
+        BC
+        DEF
+        GHIJ
+        KLMNO
+*/
+        char ch = 'A';
+        for (int i = 1; i <= scanInput; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(ch++);
+            }
+            System.out.println();
+        }
         scanner.close();
     }
 }
