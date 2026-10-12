@@ -535,6 +535,31 @@ public class JavaBasics_61_PatternBasics {
             }
             System.out.println();
         }
+        /*
+=============================================================
+                    23. Palindrome number pyramid
+=============================================================
+
+        Output:
+
+            1
+           121
+          12321
+         1234321
+        123454321
+*/
+        for (int i = 1; i <= scanInput; i++) {
+            for (int j = 1; j <= scanInput - i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
+            for (int j = i - 1; j >= 1; j--) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
         scanner.close();
     }
 }
